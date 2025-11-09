@@ -4,6 +4,12 @@ Saya Zulfian Rais Almanshur dengan NIM 2400325 mengerjakan Tugas Praktikum 7
 dalam mata kuliah Desain dan Pemrograman Berorientasi Objek untuk keberkahanNy
 a maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
+# DESKRIPSI PROGRAM
+
+# FITUR PROGRAM
+
+# ALUR
+
 # Dokumetasi
 
 
