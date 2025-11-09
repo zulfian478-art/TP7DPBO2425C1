@@ -1,0 +1,178 @@
+/* ==== Reset ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==== Warna utama ==== */
+:root {
+    --primary: #00bfa5;
+    --primary-dark: #009e88;
+    --bg: #f6f8fa;
+    --text: #333;
+    --card: #fff;
+    --table-header: #00bfa5;
+}
+
+/* ==== Dark mode variable ==== */
+body.dark {
+    --bg: #1e1e1e;
+    --text: #f5f5f5;
+    --card: #2a2a2a;
+    --table-header: #00897b;
+}
+
+/* ==== Layout Umum ==== */
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ==== Navbar ==== */
+nav {
+    background-color: #2d3e50;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* ==== Tombol Toggle ==== */
+.theme-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.theme-btn:hover {
+    transform: rotate(25deg);
+}
+
+/* ==== Container Utama ==== */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    background-color: var(--card);
+    border-radius: 12px;
+    padding: 25px 35px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s;
+}
+
+/* ==== Section Heading ==== */
+h2 {
+    margin-bottom: 15px;
+    color: var(--primary);
+    border-left: 5px solid var(--primary);
+    padding-left: 10px;
+}
+
+/* ==== Table ==== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th {
+    background-color: var(--table-header);
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: rgba(0, 191, 165, 0.1);
+}
+
+/* ==== Form ==== */
+form {
+    margin: 20px 0;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input, select {
+    padding: 8px 10px;
+    margin: 8px 10px 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 250px;
+    background-color: var(--card);
+    color: var(--text);
+    transition: background 0.3s;
+}
+
+button, input[type="submit"] {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: var(--primary-dark);
+}
+
+/* ==== Card Section ==== */
+.section {
+    margin-bottom: 30px;
+    background: var(--bg);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+/* ==== Footer ==== */
+footer {
+    background-color: #2d3e50;
+    color: #ddd;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* ==== Action Links ==== */
+a.action {
+    color: var(--primary-dark);
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: 500;
+}
+
+a.action:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
